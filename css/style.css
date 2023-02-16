@@ -208,6 +208,9 @@ img{
     padding: 16px 32px;
     color: #ffffff;
     background-color: #4d5ae5;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover, .hero-button:focus{
@@ -317,18 +320,13 @@ img{
     height: 88px;
     border: 1px solid #8E8F99;
     border-radius: 4px;
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-list-item:hover, .customers-list-item:focus {
     border-color: var(--hover-active);
-}
-
-.customers-link:hover .customers-svg {
-    fill: var(--hover-active);
-}
-
-.customers-link:focus .customers-svg {
-    fill: var(--hover-active);
 }
 
 .customers-link{
@@ -337,6 +335,17 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.customers-link:hover .customers-svg {
+    fill: var(--hover-active);
+}
+
+.customers-link:focus .customers-svg {
+    fill: var(--hover-active);
 }
 
 .customers-svg{
@@ -372,6 +381,9 @@ img{
     border: 1px solid #E7E9FC;
     border-radius: 4px;
     padding: 12px 24px;
+    transition-property: background-color, color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-btn:hover, .filter-btn:focus {
@@ -392,6 +404,9 @@ img{
 .card-list-item{
     background-color: #FFFFFF;
     width: 360px;
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card-list-item:hover, .card-list-item:focus{
@@ -421,7 +436,9 @@ img{
     mix-blend-mode: normal;
     padding: 40px 32px;
     transform: translateY(100%);
-    transition: transform 250ms;
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .overlay-text{
@@ -497,10 +514,13 @@ img{
     align-items: center;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-link:hover, .footer-social-link:focus {
-    background: #31D0AA;
+    background-color: #31D0AA;
 }
 
 .social-link{
@@ -511,6 +531,9 @@ img{
     align-items: center;
     background: #4D5AE5;
     border-radius: 50%;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-svg{
